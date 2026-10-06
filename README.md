@@ -3,7 +3,7 @@
 Toronto-inspired working messages for the [Pi coding agent](https://github.com/earendil-works/pi).
 
 > [!IMPORTANT]
-> The text in this repo was 100% AI-generated vibe slop from Kimi K2.5 in March 2026; consider it a historical account of what was in the weights. The repository owner does not endorse the content.
+> The text in this repo was 100% AI-generated vibe slop from Kimi K2.5 in March 2026; consider it a historical account of what was in the weights. It was generated live at Pi Day Toronto 2026 in front of approximately 60 people. The repository owner does not endorse the content.
 
 Instead of a generic working indicator, Pi rotates through lines such as:
 
