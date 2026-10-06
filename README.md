@@ -1,6 +1,6 @@
 # pi-whimsical-toronto
 
-Toronto-inspired working messages for the [Pi coding agent](https://github.com/earendil-works/pi-coding-agent).
+Toronto-inspired working messages for the [Pi coding agent](https://github.com/earendil-works/pi).
 
 Instead of a generic working indicator, Pi rotates through lines such as:
 
