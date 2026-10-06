@@ -1,0 +1,68 @@
+{
+  "name": "pi-whimsical-toronto",
+  "version": "0.1.0",
+  "description": "Toronto-inspired working messages for the Pi coding agent.",
+  "keywords": [
+    "pi-coding-agent",
+    "pi-extension",
+    "pi-package",
+    "toronto",
+    "working-message"
+  ],
+  "homepage": "https://github.com/benvinegar/pi-whimsical-toronto#readme",
+  "bugs": {
+    "url": "https://github.com/benvinegar/pi-whimsical-toronto/issues"
+  },
+  "license": "MIT",
+  "author": "Ben Vinegar <ben@benv.ca>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benvinegar/pi-whimsical-toronto.git"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "src"
+  ],
+  "type": "module",
+  "scripts": {
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
+    "lint": "oxlint . --deny-warnings",
+    "lint:fix": "oxlint . --fix",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.0.4",
+    "@types/node": "^22.0.0",
+    "lint-staged": "^16.2.4",
+    "oxfmt": "^0.19.0",
+    "oxlint": "^1.32.0",
+    "simple-git-hooks": "^2.13.1",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.{ts,js,mjs,cjs,json,md,yml,yaml}": "oxfmt --write",
+    "*.{ts,js,mjs,cjs}": "oxlint --fix"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.33.2",
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  }
+}
